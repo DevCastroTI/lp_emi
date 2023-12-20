@@ -1,0 +1,53 @@
+header {
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+i {
+    color: $pink-white;
+}
+
+.header-icons {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.header-icons a:hover {
+    i {
+        animation: translateY 0.5s infinite alternate;
+        color: $pink-normal;
+    }
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1)
+    }
+    to {
+        transform: translateY(-8px) scale(1.1)
+    }
+}
+
+
+.header-button{
+    border: 1px solid $pink-white;
+    padding: 8px 24px;
+    transition: background-color 0.8s;
+
+    a{
+        color: $pink-white;
+    }
+}
+
+.header-button:hover {
+    border: 1px solid $pink-normal;
+    background-color: $pink-normal;
+}
