@@ -73,7 +73,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(105, 18, 73, 0.1), #89004f), url("/lp_emi/_assents/bg.png");
+  background-image: linear-gradient(to bottom, rgba(105, 18, 73, 0.1), #89004f), url("/lp_emi/assents/bg.png");
   left: 0;
   top: 0;
   width: 100%;
