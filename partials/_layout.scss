@@ -41,6 +41,7 @@
     justify-content: center;
     padding: 0 20px;
     text-align: center;
+    z-index:1;
     animation: slideIn 1s forwards;
     
 
@@ -50,7 +51,7 @@
         color: $pink-white;
         background-color: $pink-normal;
         padding: 20px;
-        border-radius: 15px;
+        border-radius: 15px;    
         transition: 0.5s;
     }
 
@@ -423,7 +424,7 @@
     }
 
     .hero-description {
-        margin-top: -300px;
+        margin-top: -375px;
     }
 
     .about-img {
@@ -469,4 +470,28 @@
     }
 
 
+}
+
+@media screen and (max-width: 420px) { 
+    .hero-description {
+        margin-top: -479px;
+    }
+}
+
+@media screen and (max-width: 380px) { 
+    .hero-description {
+        margin-top: -371px;
+    }
+}
+
+@media screen and (max-width: 440px) { 
+    .hero-description {
+        margin-top: -491px;
+    }
+}
+
+@media screen and (max-width: 376px) { 
+    .hero-description {
+        margin-top: -383px;
+    }
 }
