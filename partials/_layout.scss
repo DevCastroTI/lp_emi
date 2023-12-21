@@ -494,3 +494,13 @@
         margin-top: -383px;
     }
 }
+
+@media screen and (max-width: 320px) { 
+    .hero-description h1 {
+        margin-top: 354px;
+    }
+
+    .about { 
+        margin-top: 150px;
+    }
+}
