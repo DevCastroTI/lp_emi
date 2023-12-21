@@ -9,11 +9,6 @@ header {
   width: 100%;
 }
 
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 .header-content {
   display: flex;
   align-items: center;
@@ -101,6 +96,7 @@ i {
   justify-content: center;
   padding: 0 20px;
   text-align: center;
+  animation: slideIn 1s forwards;
 }
 .hero-description a {
   margin-top: 30px;
@@ -121,6 +117,7 @@ i {
   display: flex;
   justify-content: end;
   margin-top: 10px;
+  animation: slideIn2 1s forwards;
 }
 .img-hero img {
   width: 50%;
@@ -128,6 +125,9 @@ i {
 }
 
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to bottom, #89004f, #ffa8d9);
   width: 100%;
   height: 100%;
@@ -247,7 +247,7 @@ i {
   padding: 4px 8px;
   border-radius: 4px;
   border: 0;
-  cursor: default;
+  cursor: pointer;
 }
 
 .map {
@@ -282,8 +282,8 @@ i {
 
 .btn-whatsapp {
   position: fixed;
-  bottom: 14px;
-  right: 24px;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 99;
 }
 .btn-whatsapp img {
@@ -294,6 +294,47 @@ i {
   transform: scale(1.1);
 }
 
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #F1EDE6;
+  color: #c33b80;
+  border-top: 4px solid #c33b80;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn2 {
+  from {
+    transform: translateY(1%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @keyframes scaleButton {
   from {
     transform: scale(1);
@@ -311,8 +352,8 @@ i {
     padding: 40px;
   }
   .btn-whatsapp {
-    bottom: 34px;
-    right: 41px;
+    bottom: 3rem;
+    right: 3rem;
   }
 }
 @media screen and (max-width: 780px) {
@@ -352,9 +393,6 @@ i {
     font-size: 14px;
     padding: 0 50px;
   }
-  .btn-whatsapp {
-    right: 118px;
-  }
 }
 @media screen and (max-width: 768px) {
   .about-content {
@@ -377,13 +415,14 @@ i {
   }
   .img-hero {
     justify-content: center;
-    margin: 0;
+    margin: 5rem 0 0 0;
   }
   .hero h1 {
     font-size: 20px;
+    margin-top: 266px;
   }
   .hero-description {
-    margin-top: -180px;
+    margin-top: -300px;
   }
   .about-img {
     padding: 10px;
@@ -403,13 +442,16 @@ i {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 380px) {
   .haircut img {
     width: 280px;
     height: 280px;
   }
   .about-content img {
     width: 355px;
+  }
+  .hero h1 {
+    margin-top: 270px;
   }
 }
 body {
@@ -437,4 +479,5 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: #ffe0ff;
 }/*# sourceMappingURL=style.css.map */

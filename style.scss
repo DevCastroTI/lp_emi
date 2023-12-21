@@ -5,9 +5,9 @@
     outline: 0;
 }
 
-@import "_partials/colors";
-@import "_partials/header";
-@import "_partials/layout";
+@import "partials/colors";
+@import "partials/header";
+@import "partials/layout";
 
 
 body {
@@ -35,4 +35,5 @@ img {
 a {
     cursor: pointer;
     text-decoration: none;
+    color: $pink-white;
 }
