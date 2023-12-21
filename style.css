@@ -99,6 +99,9 @@ i {
   z-index: 1;
   animation: slideIn 1s forwards;
 }
+.hero-description h1 {
+  text-shadow: 2px 2px 4px #1a1a1a;
+}
 .hero-description a {
   margin-top: 30px;
   text-decoration: none;
